@@ -1,0 +1,196 @@
+//Variable Declarations START
+$background-color: #151515;
+$mobile-nav-background-color: #24104f;
+$white-fonts: #fff;
+$black-fonts: #000000;
+$email-dot-color:#f5f5f5;
+$hover-button-color: rgb(255, 0, 0);
+$active-hamburger-line-color-X: #FFFF;
+$not-active-hamburger-line-color: #000000;
+//Variable Declarations END
+//Global styles START
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins";
+    text-decoration: none;
+    //set all text color
+    color: $black-fonts;
+}
+//Global styles END ------------------
+//email START
+.email {
+    display: none;
+}
+//email END
+//desktop header menu START
+.header-right {
+    display: none;
+}
+.header-item2,
+.header-item3,
+.header-item4 {
+    padding-left: 80px;
+}
+//desktop header menu END --------------------
+
+//Mobile navigation and hamburger START
+.mobile-nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    min-height: 100vh;
+    display: block;
+    background-color: $background-color;
+    padding-top: 120px;
+    transition: 0.4s;
+    transition: all 1000ms ease-out;
+}
+.mobile-nav.is-active {
+    right: 0;
+    .hamburger {
+        position: fixed;
+    }
+}
+.mobile-nav a {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto 16px;
+    text-align: center;
+    padding: 12px 16px;
+    color: $white-fonts;
+    text-decoration: none;
+}
+.mobile-nav a:hover {
+    background-color: $hover-button-color;
+}
+.menu {
+    // position: fixed;
+    // right: 50px;
+    // top: 1000px;
+}
+.hamburger div:nth-child(1) {
+    width: 27px;
+}
+.hamburger div:nth-child(2) {
+    width: 32px;
+}
+.hamburger div:nth-child(3) {
+    width: 25px;
+}
+.hamburger {
+    z-index: 3;
+    position: absolute;
+    cursor: pointer;
+    //placement of the hambuger
+    right: 24px;
+    padding-top: 27px;
+}
+//Hamburger animation START
+//makes the div lines animate to form the X
+.hamburger.animate {
+    //moves ham to be inline with menu text
+    margin-top: -2px;
+    .line:nth-child(1) {
+        background: $active-hamburger-line-color-X;
+        width: 27px;
+        transform: rotate(45deg);
+        transform-origin: 0% 48%;
+    }
+    .line:nth-child(2) {
+        width: 27px;
+        opacity: 0;
+    }
+    .line:nth-child(3) {
+        background: $active-hamburger-line-color-X;
+        width: 27px;
+        transform: rotate(-45deg);
+        transform-origin: 16% 100%;
+    }
+}
+//hamburger line styling START
+.line {
+    height: 3px;
+    background-color: $not-active-hamburger-line-color;
+    margin: 5px;
+    transition: all cubic-bezier(0.26, 1, 0.27, 1.55) 0.35s;
+}
+//hamburger line styling END --------------
+//Mobile navigation and hamburger END -----------------
+// Media query 600px - START
+@media screen and (min-width: 600px) {
+    //when resizing screen hide or show mobile when open - START
+    //should at the first point of when the mobile ham changes to desktop menu
+    body {
+        overflow: unset !important;
+    }
+    .mobile-nav {
+        right: -100% !important;
+    }
+    //when resizing screen hide or show mobile when open - END --------
+    //hide hamburger icon
+    .navgation {
+        display: none;
+    }
+    //center desktop menu text because email is not shown till 990px
+    header {
+        text-align: center;
+    }
+    //display header text and not the email
+    .header-right {
+        margin-top: 65px;
+        display: inline-block;
+    }
+}
+// Media query 600px - END --------------
+// Media query 990px - START
+@media screen and (min-width: 990px) {
+    .hamburger {
+        display: none;
+    }
+    .menu {
+        display: block;
+    }
+    .logo {
+        position: fixed;
+    }
+}
+// Media query 990px - END ---------------
+
+// Media query 1045px - START
+@media screen and (min-width: 1045px) {
+    //desktop header START
+    //show the header
+    header {
+        text-align: unset;
+    }
+    .header-right {
+        margin-right: 120px;
+        float: right;
+    }
+    .dot {
+        width: 60px;
+        height: 60px;
+        border: 2px solid $email-dot-color;
+        border-radius: 150px;
+        display: inline-block;
+        align-items: center;
+    }
+    .email-svg {
+        margin-left: 16px;
+        padding-top: 20px;
+    }
+    .email-address {
+        margin-left: 30px;
+    }
+    .email {
+        margin: auto;
+        margin-top: 40px;
+        margin-left: 120px;
+        display: inline-block;
+    }
+    //desktop header END -------------
+}
+// Media query 1045px - END ------------

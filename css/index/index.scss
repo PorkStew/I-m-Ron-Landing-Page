@@ -1,0 +1,70 @@
+.landing-area {
+    margin: auto;
+    text-align: center;
+    /* padding: 165px; */
+}
+.ron-img{
+    padding-top: 100px;
+}
+.hi {
+    font-size: 30px;
+    font-weight: 500;
+    padding-top: 15px;
+}
+.building {
+    font-size: 32.36px;
+    font-weight: 600;
+    margin: auto;
+    max-width: 1000px;
+}
+.a-product {
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 35px;
+}
+.medium {
+    padding: 0px;
+    margin: 0px;
+    font-weight: 500;
+}
+.i-specialize {
+    font-size: 20px;
+    font-weight: 400;
+    // padding-left: 200px;
+    // padding-right: 200px;
+    padding-top: 5px;
+    margin: auto;
+    max-width: 500px;
+}
+.connect-btn {
+    font-size: 20px;
+    font-weight: 400;
+    border: 0;
+    height: 80px;
+    width: 275px;
+    border-radius: 150px;
+    margin-top: 60px;
+    color: #ffff;
+    background-color: #000000;
+    outline: none;
+}
+@media screen and (min-width: 425px) {
+    .hi{
+        font-size: 30px;
+    }
+    .building{
+        font-size: 52.36px;
+    }
+}
+@media screen and (min-width: 990px) {
+
+.hi{
+    font-size: 40px;
+}
+.building{
+    font-size: 84.72px;
+}
+
+
+
+}
