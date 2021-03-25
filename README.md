@@ -6,7 +6,7 @@ Here is a link to PREVIEW: https://porkstew.github.io/I-m-Ron-Landing-Page
 <img src="I'm-Ron-Landing-Page.png">
 
 # Coding Stack
-   <img src="Languages/html5.svg" width=50px; height=50px;><img src="Languages/css3.svg" width=50px; height=50px;><img src="Languages/javascript.svg" width=50px; height=50px;>
+   <img src="Languages/html5.svg" width=50px; height=50px;><img src="Languages/sass.svg" width=50px; height=50px;><img src="Languages/javascript.svg" width=50px; height=50px;>
 
 # COPYRIGHT
 
