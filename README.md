@@ -5,4 +5,6 @@ A portfolio landing page for those freelancers and people who want to be creativ
 <img src="I'm-Ron-Landing-Page.png">
 
 # Coding Stack
-   <img src="I'm-Ron-Landing-Page.png">
+   <img src="Languages/html5.svg">
+   <img src="Languages/css3.svg">
+   <img src="Languages/javascript.svg">
