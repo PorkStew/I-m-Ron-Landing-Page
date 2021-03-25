@@ -1,10 +1,10 @@
 //Variable Declarations START
-$background-color: #151515;
-$mobile-nav-background-color: #24104f;
+
+$mobile-nav-background-color: #000000;
 $white-fonts: #fff;
+$hover-color: #fff;
 $black-fonts: #000000;
 $email-dot-color:#f5f5f5;
-$hover-button-color: rgb(255, 0, 0);
 $active-hamburger-line-color-X: #FFFF;
 $not-active-hamburger-line-color: #000000;
 //Variable Declarations END
@@ -42,7 +42,7 @@ $not-active-hamburger-line-color: #000000;
     width: 100%;
     min-height: 100vh;
     display: block;
-    background-color: $background-color;
+    background-color: $mobile-nav-background-color;
     padding-top: 120px;
     transition: 0.4s;
     transition: all 1000ms ease-out;
@@ -64,7 +64,8 @@ $not-active-hamburger-line-color: #000000;
     text-decoration: none;
 }
 .mobile-nav a:hover {
-    background-color: $hover-button-color;
+    background-color: $hover-color;
+    color: $black-fonts;
 }
 .menu {
     // position: fixed;
@@ -184,6 +185,7 @@ $not-active-hamburger-line-color: #000000;
     }
     .email-address {
         margin-left: 30px;
+        font-weight: 500;
     }
     .email {
         margin: auto;
